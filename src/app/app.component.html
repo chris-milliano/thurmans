@@ -4,9 +4,55 @@
     </div>
 </header>
 
+<div id="hours" class="container">
+    <div id="hours__title" class="title">Hours</div>
+    <ul class="container">
+        <li id="hours__item-titles" class="container hours__item">
+            <div class="container hours__day">DAY</div>
+            <div class="container hours__bar">BAR</div>
+            <div class="container hours__kitchen">KITCHEN</div>
+        </li>
+        <li class="container hours__item" [ngClass]="{'item--selected': dayEnum == 0}">
+            <div class="container hours__day">SUN</div>
+            <div class="container hours__bar"><i>Bar: </i>Closed</div>
+            <div class="container hours__kitchen"><i>Kitchen: </i>Closed</div>
+        </li>
+        <li class="container hours__item" [ngClass]="{'item--selected': dayEnum == 1}">
+            <div class="container hours__day">MON</div>
+            <div class="container hours__bar"><i>Bar: </i>Closed</div>
+            <div class="container hours__kitchen"><i>Kitchen: </i>Closed</div>
+        </li>
+        <li class="container hours__item" [ngClass]="{'item--selected': dayEnum == 2}">
+            <div class="container hours__day">TUE</div>
+            <div class="container hours__bar"><i>Bar: </i>4pm - 11pm</div>
+            <div class="container hours__kitchen"><i>Kitchen: </i>5pm - 9pm</div>
+        </li>
+        <li class="container hours__item" [ngClass]="{'item--selected': dayEnum == 3}">
+            <div class="container hours__day">WED</div>
+            <div class="container hours__bar"><i>Bar: </i>4pm - 11pm</div>
+            <div class="container hours__kitchen"><i>Kitchen: </i>5pm - 9pm</div>
+        </li>
+        <li class="container hours__item" [ngClass]="{'item--selected': dayEnum == 4}">
+            <div class="container hours__day">THU</div>
+            <div class="container hours__bar"><i>Bar: </i>4pm - 11pm</div>
+            <div class="container hours__kitchen"><i>Kitchen: </i>5pm - 10pm</div>
+        </li>
+        <li class="container hours__item" [ngClass]="{'item--selected': dayEnum == 5}">
+            <div class="container hours__day">FRI</div>
+            <div class="container hours__bar"><i>Bar: </i>4pm - 1<sup>30</sup>am</div>
+            <div class="container hours__kitchen"><i>Kitchen: </i>5pm - 11pm</div>
+        </li>
+        <li class="container hours__item" [ngClass]="{'item--selected': dayEnum == 6}">
+            <div class="container hours__day">SAT</div>
+            <div class="container hours__bar"><i>Bar: </i>5pm - 1<sup>30</sup>am</div>
+            <div class="container hours__kitchen"><i>Kitchen: </i>5pm - 11pm</div>
+        </li>
+    </ul>
+</div>
+
 
 <div id="on-tap" class="container">
-    <div id="on-tap__title">Beers On Tap</div>
+    <div id="on-tap__title" class="title">Beers On Tap</div>
     <ul class="container">
         <li class="container on-tap__beer">
             <div class="container beer__title">Civil Life Brown</div>

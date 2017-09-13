@@ -49,12 +49,88 @@ header {
     }
 }
 
+#hours {
+    background-color: #133547;
+    color: #fff;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+
+    #hours__title {
+        text-align: center;
+        margin: 2vh auto;
+    }
+
+    ul {
+        width: 80%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0;
+
+        #hours__item-titles {
+            display: none;
+
+            @media screen and (min-width: 786px) {
+                display: block;
+                background-color: #133547;
+            }
+        }
+
+        .hours__item {
+            background-color: #fff;
+            color: #4d4d4d;
+            padding: 10px;
+            text-align: center;
+
+            &:nth-child(odd) {
+                background-color: #92aa9b;
+                color: #fff;
+            }
+
+            i {
+                font-style: normal;
+            }
+
+            .hours__day {
+                float: left;
+            }
+
+            @media screen and (min-width: 786px) {
+                text-align: left;
+
+                i {
+                    display: none;
+                }
+
+                .hours__day {
+                    float: left;
+                    width: 20%;
+                }
+
+                .hours__bar {
+                    float: left;
+                    width: 40%;
+                }
+
+                .hours__kitchen {
+                    float: left;
+                    width: 40%;
+                }
+            }
+        }
+
+        .item--selected {
+            border: 5px solid #133547;
+        }
+    }
+}
+
 #on-tap {
     margin: 5vh auto;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
 
     #on-tap__title {
         text-align: center;
-        font-size: 2em;
         margin-bottom: 2vh;
     }
 

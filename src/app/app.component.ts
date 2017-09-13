@@ -10,6 +10,8 @@ import { Component, OnInit } from '@angular/core';
 
 export class AppComponent implements OnInit {
 
+    dayEnum: number;
+
     ngOnInit() {
         console.log("Init app.component");
 
@@ -22,5 +24,12 @@ export class AppComponent implements OnInit {
         //         console.log("nothing came");
         //     }
         // });
+
+        this.setDay();
+    }
+
+    setDay() {
+        let date = new Date();
+        this.dayEnum = date.getDay();
     }
 }
