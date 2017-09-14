@@ -173,3 +173,54 @@ header {
         }
     }
 }
+
+
+#contact {
+    background-color: #92aa9b;
+    color: #133547;
+    padding: 5vh;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: #133547;
+        cursor: pointer;
+        transition: all 1s ease;
+
+        &:hover {
+            background-color: #133547;
+            color: #fff;
+        }
+
+    }
+
+    #contact__phone {
+        margin-bottom: 2vh;
+    }
+
+    #contact__email {
+        margin-bottom: 2vh;
+    }
+
+    #contact__address {
+        margin-bottom: 2vh;
+    }
+
+    #contact__map {
+        width: 80vw;
+        height: 40vw;
+        max-width: 800px;
+        max-height: 400px;
+        margin: 0 auto;
+        transition: all 1s ease;
+    }
+
+    #contact__map.true {
+        height: auto;
+    }
+
+    #contact__map.false {
+        height: 0;
+    }
+
+}
