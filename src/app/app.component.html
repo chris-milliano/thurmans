@@ -107,25 +107,52 @@
 
 
 <div id="contact" class="container">
-    <div id="contact__phone" class="container">
-        <div class="title">Phone</div>
-        <a href="tel:+13146962783">314.696.2783</a>
-    </div>
-    <div id="contact__email" class="container">
-        <div class="title">Email</div>
-        <a href="mailto:hello@thurmansinshaw.com">hello@thurmansinshaw.com</a>
-    </div>
-    <div id="contact__address" class="container">
-        <div class="title">Address</div>
-        <a (click)="toggleMap()">4069 Shenandoah Ave, St. Louis, MO 63110</a>
-    </div>
-    <div *ngIf="showMap" id="contact__map" class="container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.655425563544!2d-90.25341388456954!3d38.61080047961592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b4f7df6b119b%3A0xf29d1f3b74fc2ff!2s4069+Shenandoah+Ave%2C+St.+Louis%2C+MO+63110!5e0!3m2!1sen!2sus!4v1505362998707"
-            width="100%"
-            height="100%"
-            frameborder="0"
-            style="border:0"
-            allowfullscreen>
-        </iframe>
+    <div id="contact__contents" class="container">
+        <div id="contact__phone" class="container contact__item">
+            <a href="tel:+13146962783">
+                <span class="title">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                    </span>
+                    Phone
+                </span>
+                <br/>
+                314.696.2783
+            </a>
+        </div>
+        <div id="contact__email" class="container contact__item">
+            <a href="mailto:hello@thurmansinshaw.com">
+                <div class="title">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                    Email
+                </div>
+                hello@thurmansinshaw.com
+            </a>
+        </div>
+        <div id="contact__address" class="container contact__item">
+            <a (click)="toggleMap()">
+                <div class="title">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                    </span>
+                    Address
+                </div>
+                4069 Shenandoah Ave, St. Louis, MO 63110
+            </a>
+        </div>
+        <div *ngIf="showMap" id="contact__map" class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.655425563544!2d-90.25341388456954!3d38.61080047961592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b4f7df6b119b%3A0xf29d1f3b74fc2ff!2s4069+Shenandoah+Ave%2C+St.+Louis%2C+MO+63110!5e0!3m2!1sen!2sus!4v1505362998707"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                style="border:0"
+                allowfullscreen>
+            </iframe>
+        </div>
     </div>
 </div>
