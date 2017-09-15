@@ -80,6 +80,7 @@ header {
             color: #4d4d4d;
             padding: 10px;
             text-align: center;
+            opacity: .7;
 
             &:nth-child(odd) {
                 background-color: #92aa9b;
@@ -120,6 +121,7 @@ header {
 
         .item--selected {
             border: 5px solid #133547;
+            opacity: 1;
         }
     }
 }
